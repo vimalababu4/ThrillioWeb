@@ -54,7 +54,7 @@ public class DataStore {
 		}
 		//try with resources ==> conn & stmt will be closed
 		//Connection string: < protocol>:>sub-procol>:<data.source details>
-		try(Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/db_test?useSSL=false","root", "");
+		try(Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/db_test?useSSL=false","root", "password");
 				Statement stmt = conn.createStatement();){
 			loadUsers(stmt);
 			LoadWebLinks(stmt);

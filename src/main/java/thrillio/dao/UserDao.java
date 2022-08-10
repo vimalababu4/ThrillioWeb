@@ -31,7 +31,7 @@ public class UserDao {
 			e.printStackTrace();
 		}
 	
-		try(Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/db_test?useSSL=false","root", "abhIruchI*123$");
+		try(Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/db_test?useSSL=false","root", "password");
 				Statement stmt = conn.createStatement();){
 			String query= "Select * from User where id=" + userId;
 			ResultSet rs= stmt.executeQuery(query);

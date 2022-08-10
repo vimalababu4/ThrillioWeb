@@ -25,7 +25,7 @@
     </td>
     
     <td style="color:gray;">
-     By <span style="color: #B13100;"><%= book.getAuthors() %></span>
+     By <span style="color: #B13100;"><%= book.getPublisherId() %></span>
      <br><br>
      Rating: <span style="color: #B13100;"><%= book.getAmazonRating() %></span>
      <br><br>

@@ -26,7 +26,7 @@ public class BookmarkDao {
 
 	public void saveUserBookmark(UserBookmark userBookmark) {
 		//DataStore.add(userBookmark);
-		try(Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/db_test?useSSL=false","root", "abhIruchI*123$");
+		try(Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/db_test?useSSL=false","root", "password");
 				Statement stmt = conn.createStatement();){
 			if(userBookmark.getBookmark() instanceof Book) {
 				saveUserBook(userBookmark,stmt);
